@@ -15,6 +15,7 @@
 		884D532A23F8786600C6401D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884D532823F8786600C6401D /* LaunchScreen.storyboard */; };
 		884D533523F8786600C6401D /* FlashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D533423F8786600C6401D /* FlashcardsTests.swift */; };
 		884D534023F8786600C6401D /* FlashcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D533F23F8786600C6401D /* FlashcardsUITests.swift */; };
+		884DC3E924140CC900654321 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DC3E824140CC900654321 /* CreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		884D533B23F8786600C6401D /* FlashcardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		884D533F23F8786600C6401D /* FlashcardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsUITests.swift; sourceTree = "<group>"; };
 		884D534123F8786600C6401D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884DC3E824140CC900654321 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		884D531123F8786200C6401D = {
 			isa = PBXGroup;
 			children = (
+				884DC3E824140CC900654321 /* CreationViewController.swift */,
 				884D531C23F8786200C6401D /* Flashcards */,
 				884D533323F8786600C6401D /* FlashcardsTests */,
 				884D533E23F8786600C6401D /* FlashcardsUITests */,
@@ -99,8 +102,8 @@
 		884D531C23F8786200C6401D /* Flashcards */ = {
 			isa = PBXGroup;
 			children = (
-				884D531D23F8786200C6401D /* AppDelegate.swift */,
 				884D531F23F8786200C6401D /* SceneDelegate.swift */,
+				884D531D23F8786200C6401D /* AppDelegate.swift */,
 				884D532123F8786200C6401D /* ViewController.swift */,
 				884D532323F8786200C6401D /* Main.storyboard */,
 				884D532623F8786600C6401D /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 				884D532223F8786200C6401D /* ViewController.swift in Sources */,
 				884D531E23F8786200C6401D /* AppDelegate.swift in Sources */,
 				884D532023F8786200C6401D /* SceneDelegate.swift in Sources */,
+				884DC3E924140CC900654321 /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
