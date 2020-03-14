@@ -16,6 +16,10 @@ class CreationViewController: UIViewController {
         dismiss (animated: true)
     }
     
+    @IBAction func didTapOnNext(_ sender: Any) {
+    }
+    @IBAction func didTapOnPrev(_ sender: Any) {
+    }
     @IBAction func didTapOnDone(_ sender: Any) {
         let questionText = questionTextField.text
         let answerText = answerTextField.text

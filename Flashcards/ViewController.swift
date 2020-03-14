@@ -8,13 +8,22 @@
 
 import UIKit
 
+struct FlashCard {
+    var question: String
+    var answer: String
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var frontLabel: UILabel!
     @IBOutlet weak var backLabel: UILabel!
+    
+    var flashcards = [Flashcard] ()
+    var currentIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        updateFlashcard(question: <#T##String#>, answer: <#T##String#>)
     }
 
     @IBAction func didTaponFlashcard(_ sender: Any) {
@@ -23,8 +32,12 @@ class ViewController: UIViewController {
     }
     
     func updateFlashcard(question: String, answer: String) {
-        frontLabel.text = question
-        backLabel.text = answer
+        let flashcard = Flashcard (question: question, answer: answer)
+        frontLabel.text = flashcard.question
+        backLabel.text = flashcard.answer
+        Void append(newElement: Flashcard)
+        Void append(contentsOf: Sequence)
+        flashcards.append(flashcard)
     }
     
 }
