@@ -18,25 +18,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var frontLabel: UILabel!
     @IBOutlet weak var backLabel: UILabel!
     
-    var flashcards = [Flashcard] ()
+    var flashcards = [FlashCard]()
     var currentIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        updateFlashcard(question: <#T##String#>, answer: <#T##String#>)
+        updateFlashcard(question: "What year was Penn State University founded?", answer: "1855")
     }
 
     @IBAction func didTaponFlashcard(_ sender: Any) {
-        frontLabel.isHidden = true
-        backLabel.isHidden = false
+        if frontLabel.isHidden == false {
+            frontLabel.isHidden = true
+        } else {
+            frontLabel.isHidden = false
+        }
     }
     
     func updateFlashcard(question: String, answer: String) {
-        let flashcard = Flashcard (question: question, answer: answer)
+        let flashcard = FlashCard(question: question, answer: answer)
         frontLabel.text = flashcard.question
         backLabel.text = flashcard.answer
-        Void append(newElement: Flashcard)
-        Void append(contentsOf: Sequence)
         flashcards.append(flashcard)
     }
     
